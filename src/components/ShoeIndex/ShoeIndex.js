@@ -50,7 +50,7 @@ const LeftColumn = styled.div`
   height: max-content;
   flex-basis: 254px;
   position: sticky;
-  top: 32px;
+  top: 90px; /* TODO: this does not work */
 `;
 
 const MainColumn = styled.div`

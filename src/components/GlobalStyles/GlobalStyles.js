@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -66,6 +66,7 @@ table {
   isolation: isolate;
 }
 
+/* KEY: This is good for our height measurements in the children elements*/
 html, body, #root {
   height: 100%;
 }
