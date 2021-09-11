@@ -20,7 +20,6 @@ const App = () => {
 const Main = styled.main`
   padding: 64px 32px;
   isolation: isolate;
-  margin-top: 90px;
 `;
 
 export default App;

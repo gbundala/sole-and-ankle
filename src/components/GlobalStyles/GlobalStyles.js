@@ -62,11 +62,23 @@ table {
     Create a stacking context, without a z-index.
     This ensures that all portal content (modals and tooltips) will
     float above the app.
+
+  KEY: To sort the sticky header not sticking I have resorted to put overflow: auto in the root component #root here so that the sticky header works as its supposed to by being contained by the root Component hence sticking at the top. Otherwise I could have put overflow auto below in the rule for -ms-hyphenate-limit-chars, body and #root
+
+  ALTERNATIVELY: I would have needed to just change the height below to min-height (that all) and not have to deal with overflow here. But I didn't want to mess with the height measurement of height 100%. Though set min-height 100% may have the same implication as with height 100% will have to confirm that and revisit here.
+
+  TODO: Read the above and revisit whether to use min-height instead of overflow property.
   */
   isolation: isolate;
+  overflow: auto;
 }
 
-/* KEY: This is good for our height measurements in the children elements*/
+/* KEY: This is good for our height measurements in the children elements
+
+
+*/
+
+
 html, body, #root {
   height: 100%;
 }

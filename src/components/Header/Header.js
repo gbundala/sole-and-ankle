@@ -30,11 +30,8 @@ const Header = () => {
 };
 
 const HeaderWrapper = styled.div`
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
   z-index: 1;
 `;
 
